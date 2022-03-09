@@ -19,6 +19,7 @@
         <th>Name</th>
         <th>Price</th>
         <th>Description</th>
+        <th>Image</th>
     </tr>
     </thead>
     <tbody>
@@ -26,6 +27,7 @@
         <td th:text="${product.getName()}"></td>
         <td th:text="${product.getPrice()}"></td>
         <td th:text="${product.getDescription()}"></td>
+        <td><img th:src="@{${product.getImage()}}" alt="Lỗi"></td>
     </tr>
     </tbody>
 </table>

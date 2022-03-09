@@ -5,11 +5,13 @@ import cg.model.Product;
 import java.util.ArrayList;
 
 public interface IProductService {
-    ArrayList<Product> getAllProduct();
+    ArrayList<Product> findAll();
 
-    Product saveProduct(Product product);
+    Product save(Product product);
 
-    Product deleteProduct(int id);
+    void delete(int id);
 
-    Product getProduct(int id);
+    Product findById(int id);
+
+    ArrayList<Product> findAllByName(String name);
 }

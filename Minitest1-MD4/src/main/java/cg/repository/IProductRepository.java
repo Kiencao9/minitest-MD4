@@ -7,9 +7,11 @@ import java.util.ArrayList;
 public interface IProductRepository {
     ArrayList<Product> findAll();
 
-    Product saveProduct(Product product);
+    Product save(Product product);
 
-    Product deleteProduct(int id);
+    void delete(int id);
 
-    Product findProductById(int id);
+    Product findById(int id);
+
+    ArrayList<Product> findAllByName(String name);
 }
